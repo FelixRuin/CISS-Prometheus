@@ -83,6 +83,21 @@
 #define TEMPLATE_FLAG_CLEAR_CONTENTS   4 // if it should destroy objects it spawns on top of
 #define TEMPLATE_FLAG_NO_RUINS         8 // if it should forbid ruins from spawning on top of it
 
+// Some colours for cloths?
++//some colors, do not necessarily match with byond defines for "red", "green", "blue", etc
+-#define COLOR_RED 		"#FF0000"	+#define COLOR_RED "#ff0000"
+-#define COLOR_GREEN 	"#00FF00"	+#define COLOR_GREEN "#00ff00"
+-#define COLOR_BLUE 		"#0000FF"	+#define COLOR_BLUE "#0000ff"
+-#define COLOR_CYAN 		"#00FFFF"	+#define COLOR_CYAN "#00ffff"
+-#define COLOR_PINK 		"#FF00FF"	+#define COLOR_PINK "#ff00ff"
+-#define COLOR_YELLOW 	"#FFFF00"	+#define COLOR_YELLOW "#ffff00"
+-#define COLOR_ORANGE 	"#FF9900"	+#define COLOR_ORANGE "#ff9900"
+-#define COLOR_WHITE 	"#FFFFFF"	+#define COLOR_PURPLE "#800080"
+-#define COLOR_GRAY      "#808080"	+#define COLOR_BROWN "#996633"
++#define COLOR_WHITE "#ffffff"
++#define COLOR_GREY "#808080"
++#define COLOR_BLACK "#000000"
++#define COLOR_ADEQUATE_LIST list(COLOR_RED, COLOR_GREEN, COLOR_BLUE, COLOR_CYAN, COLOR_PINK, COLOR_YELLOW, COLOR_ORANGE, COLOR_PURPLE, COLOR_BROWN, COLOR_WHITE, COLOR_GREY, COLOR_BLACK) // Used in cloth code. We need to check whether item color is somewhere within these boundaries.
 // Convoluted setup so defines can be supplied by Bay12 main server compile script.
 // Should still work fine for people jamming the icons into their repo.
 #ifndef CUSTOM_ITEM_OBJ
