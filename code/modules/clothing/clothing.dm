@@ -47,6 +47,9 @@
 			ret.overlays |= A.get_mob_overlay(user_mob, slot)
 	return ret
 
+var/rags_to_give = 0
+var/rag_color_to_give = "none" // When giving color. Give "none", or consider checking _DEFINES/misc.dm for colors.
+
 // Aurora forensics port.
 /obj/item/clothing/clean_blood()
 	. = ..()
